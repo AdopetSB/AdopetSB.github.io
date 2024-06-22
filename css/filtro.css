@@ -1,0 +1,181 @@
+/*Contenedor de categorias*/
+
+input[type="radio"] {
+    display: none;
+}
+
+.container-category {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.container-category label {
+    padding: 6px 40px;
+    margin: 10px;
+    font-size: 20px;
+    background: #404a7c;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.container-category label:hover {
+    opacity: 0.8;
+}
+
+/*Post - Publicaciones*/
+
+.container-post {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.posts {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.posts .post {
+    background: #fff;
+    box-shadow: 0 0 20px -20px black;
+    border-radius: 6px;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+.post .ctn-img {
+    width: 100%;
+}
+
+.post .ctn-img img {
+    width: 275px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.post h2 {
+    font-size: 18px;
+    margin-top: 20px;
+    padding: 0px 20px;
+}
+
+.post span {
+    display: block;
+    margin-top: 10px;
+    padding: 0px 20px;
+}
+
+.ctn-tag {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 16px;
+    margin-top: 10px;
+}
+
+.ctn-tag li {
+    list-style: none;
+    font-size: 14px;
+    margin: 4px;
+    padding: 6px 10px;
+    background: #404a7c;
+    cursor: default;
+    color: #fff;
+}
+
+.post button {
+    margin-top: 10px;
+    margin-left: 70px;
+    padding: 10px 50px;
+    font-size: 15px;
+    background: #4d84e2;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.post button:hover {
+    opacity: 0.9;
+}
+
+/*sistema de filtrado*/
+
+[value="TODOS"]:checked ~ .posts .post[data-category] {
+    display: block;
+}
+
+[value="perros"]:checked ~ .posts .post:not([data-category~="perros"]),
+[value="gatos"]:checked ~ .posts .post:not([data-category~="gatos"]),
+[value="conejos"]:checked ~ .posts .post:not([data-category~="conejos"]),
+[value="aves"]:checked ~ .posts .post:not([data-category~="aves"]) {
+    display: none;
+}
+
+[value="TODOS"]:checked ~ .container-category [for="TODOS"],
+[value="perros"]:checked ~ .container-category [for="perros"],
+[value="gatos"]:checked ~ .container-category [for="gatos"],
+[value="conejos"]:checked ~ .container-category [for="conejos"],
+[value="aves"]:checked ~ .container-category [for="aves"] {
+    background: #4d84e2;
+    color: #fff;
+}
+
+@media screen and (max-width: 1200px) {
+    .posts {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .posts {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .posts {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* Additional media queries for better responsiveness */
+
+@media screen and (max-width: 768px) {
+    .container-category {
+        flex-direction: column;
+        align-items: center;
+    }
+    .container-category label {
+        width: 90%;
+        text-align: center;
+    }
+    .post button {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container-category label {
+        font-size: 18px;
+        padding: 6px 20px;
+    }
+    .post h2 {
+        font-size: 16px;
+    }
+    .post span {
+        font-size: 14px;
+    }
+    .post button {
+        font-size: 14px;
+        padding: 8px 40px;
+    }
+}

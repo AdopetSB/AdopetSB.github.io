@@ -1,0 +1,40 @@
+/* Estilos para la etiqueta */
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Estilos para el menú desplegable */
+select {
+    width: 100%;
+    padding: 10px;
+    /* margin-bottom: 20px; */
+    border-radius: 3px;
+    border: 2px solid #000000;
+    font-size: 16px;
+}
+
+/* Media query for tablets and below */
+@media screen and (max-width: 800px) {
+    label {
+        font-size: 14px;
+    }
+    select {
+        padding: 8px;
+        font-size: 14px;
+    }
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 480px) {
+    label {
+        font-size: 12px;
+        margin-bottom: 8px;
+    }
+    select {
+        padding: 6px;
+        font-size: 12px;
+        border-radius: 2px;
+    }
+}

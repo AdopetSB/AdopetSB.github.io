@@ -1,0 +1,111 @@
+.navbar-default {
+  background-color: #3498db;
+  border-color: #2980b9;
+}
+.navbar-default .navbar-brand {
+  color: #ecf0f1;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #ecdbff;
+}
+.navbar-default .navbar-text {
+  color: #ecf0f1;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #ecf0f1;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #ecdbff;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #ecdbff;
+  background-color: #2980b9;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #ecdbff;
+  background-color: #2980b9;
+}
+.navbar-default .navbar-toggle {
+  border-color: #2980b9;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #2980b9;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #ecf0f1;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #ecf0f1;
+}
+.navbar-default .navbar-link {
+  color: #ecf0f1;
+}
+.navbar-default .navbar-link:hover {
+  color: #ecdbff;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #ecf0f1;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #ecdbff;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #ecdbff;
+    background-color: #2980b9;
+  }
+  .navbar-default .navbar-brand {
+    font-size: 18px; /* Smaller font size for mobile */
+  }
+  .navbar-default .navbar-nav > li > a {
+    padding: 10px 15px; /* Smaller padding for mobile */
+  }
+  .navbar-default .navbar-toggle {
+    margin-right: 15px; /* Adjust toggle button position */
+  }
+  .navbar-default .navbar-collapse {
+    padding: 10px; /* Adjust collapse padding */
+  }
+}
+
+/* Additional media queries for tablet devices */
+@media (min-width: 768px) and (max-width: 991px) {
+  .navbar-default .navbar-brand {
+    font-size: 20px; /* Adjust font size for tablets */
+  }
+  .navbar-default .navbar-nav > li > a {
+    padding: 12px 18px; /* Adjust padding for tablets */
+  }
+}
+
+/* Additional media queries for small desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .navbar-default .navbar-brand {
+    font-size: 22px; /* Adjust font size for small desktops */
+  }
+  .navbar-default .navbar-nav > li > a {
+    padding: 14px 20px; /* Adjust padding for small desktops */
+  }
+}
+
+/* Additional media queries for larger desktops */
+@media (min-width: 1200px) {
+  .navbar-default .navbar-brand {
+    font-size: 24px; /* Default font size for large desktops */
+  }
+  .navbar-default .navbar-nav > li > a {
+    padding: 15px 22px; /* Default padding for large desktops */
+  }
+}

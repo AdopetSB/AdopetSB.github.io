@@ -1,0 +1,32 @@
+{
+    "name": "niletphp/error-handling",
+    "description": "The NiletPHP error handling component.",
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/tsvetelintsonev/niletphp-error-handling/issues",
+        "source": "https://github.com/tsvetelintsonev/niletphp-error-handling"
+    },
+    "authors": [
+        {
+            "name": "Tsvetelin Tsonev",
+            "email": "tsvetelin.tsonev@yahoo.co.uk"
+        }
+    ],
+    "require": {
+        "php": ">=7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Nilet\\Components\\ErrorHandling\\": "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev"
+}
